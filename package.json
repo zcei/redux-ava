@@ -31,7 +31,7 @@
   "dependencies": {},
   "devDependencies": {
     "cz-conventional-changelog": "*",
-    "standard": "*",
+    "standard": "^5",
     "snazzy": "*",
     "semantic-release": "*"
   },
