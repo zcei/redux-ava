@@ -18,9 +18,7 @@
     "test": "standard --verbose | snazzy",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "files": [
-    "index.js"
-  ],
+  "files": ["index.js", "lib/"],
   "keywords": [
     "ava",
     "redux",
