@@ -28,7 +28,9 @@
     "testing",
     "test"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "deep-freeze": "0.0.1"
+  },
   "devDependencies": {
     "cz-conventional-changelog": "*",
     "standard": "^5",
