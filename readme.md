@@ -1,13 +1,13 @@
-# ava-redux
+# redux-ava
 
 > Write [AVA](https://github.com/sindresorhus/ava) tests for [redux](https://github.com/reactjs/redux) pretty quickly
 
-[![Build Status](https://img.shields.io/travis/sotojuan/ava-redux.svg?style=flat-square)](https://travis-ci.org/sotojuan/ava-redux)
+[![Build Status](https://img.shields.io/travis/sotojuan/redux-ava.svg?style=flat-square)](https://travis-ci.org/sotojuan/redux-ava)
 
 ## Install
 
 ```
-npm install --save-dev ava-redux
+npm install --save-dev redux-ava
 ```
 
 ## Usage

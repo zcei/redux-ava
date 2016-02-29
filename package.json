@@ -1,10 +1,10 @@
 {
-  "name": "ava-redux",
+  "name": "redux-ava",
   "description": "Write AVA tests for redux pretty quickly",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sotojuan/ava-redux"
+    "url": "https://github.com/sotojuan/redux-ava"
   },
   "author": {
     "name": "Juan Soto",
