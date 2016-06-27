@@ -18,7 +18,10 @@
     "test": "standard --verbose | snazzy",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "files": ["index.js", "lib/"],
+  "files": [
+    "index.js",
+    "lib/"
+  ],
   "keywords": [
     "ava",
     "redux",
@@ -31,12 +34,15 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "*",
-    "standard": "^5",
+    "standard": "^7.1.2",
     "snazzy": "*",
     "semantic-release": "*"
   },
   "standard": {
-    "ignore": ["test.js", "test/**"]
+    "ignore": [
+      "test.js",
+      "test/**"
+    ]
   },
   "config": {
     "commitizen": {
