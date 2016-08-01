@@ -1,6 +1,7 @@
 {
   "name": "redux-ava",
   "description": "Write AVA tests for redux pretty quickly",
+  "version": "2.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -30,7 +31,8 @@
     "test"
   ],
   "dependencies": {
-    "deep-freeze": "0.0.1"
+    "deep-freeze": "0.0.1",
+    "immutable": "^3.8.1"
   },
   "devDependencies": {
     "cz-conventional-changelog": "*",
