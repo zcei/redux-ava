@@ -1,8 +1,8 @@
-const TEST_ACTION = 'action/test'
+const testAction = 'action/test'
 
 function actionCreator (name, age) {
   return {
-    type: TEST_ACTION,
+    type: testAction,
     name: name || 'John Doe',
     age: age || 42
   }
@@ -10,16 +10,16 @@ function actionCreator (name, age) {
 
 const testSpy = () => ({
   deepEqual (actual, expected, description) {
-    this.result = { actual, expected, description }
+    this.result = {actual, expected, description}
   },
 
   true: (actual, description) => {
-    this.result = { actual, expected: true, description }
+    this.result = {actual, expected: true, description}
   }
 })
 
 module.exports = {
-  TEST_ACTION,
+  testAction,
   actionCreator,
   testSpy
 }

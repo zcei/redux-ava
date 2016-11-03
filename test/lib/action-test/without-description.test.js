@@ -1,15 +1,15 @@
 const test = require('ava')
-const reduxAva = require('../../..')
-const actionTest = reduxAva.actionTest
+const m = require('../../..')
+const actionTest = m.actionTest
 
 const utils = require('../_utils')
 const testSpy = utils.testSpy
-const TEST_ACTION = utils.TEST_ACTION
+const testAction = utils.testAction
 const actionCreator = utils.actionCreator
 
 test('single parameter', (t) => {
-  const expected = { type: TEST_ACTION, name: 'John Doe', age: 42 }
-  const tester = actionTest(actionCreator, 'Jane Doe', expected, 'has description')
+  const expected = {type: testAction, name: 'John Doe', age: 42}
+  const tester = actionTest(actionCreator, 'Jane Doe', expected)
 
   const spy = testSpy()
   tester(spy)
@@ -17,5 +17,5 @@ test('single parameter', (t) => {
 
   t.deepEqual(result.actual, actionCreator('Jane Doe'), 'is action with given name and default age')
   t.is(result.expected, expected)
-  t.is(result.description, 'has description')
+  t.is(typeof result.description, 'undefined')
 })
