@@ -16,7 +16,7 @@
     "node": ">=4.2.0"
   },
   "scripts": {
-    "test": "standard --verbose | snazzy",
+    "test": "standard --verbose | snazzy && ava --verbose",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "files": [
@@ -35,10 +35,11 @@
     "immutable": "^3.8.1"
   },
   "devDependencies": {
+    "ava": "^0.16.0",
     "cz-conventional-changelog": "*",
-    "standard": "^8.0.0",
+    "semantic-release": "*",
     "snazzy": "*",
-    "semantic-release": "*"
+    "standard": "^8.0.0"
   },
   "standard": {
     "ignore": [
